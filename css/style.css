@@ -2,7 +2,7 @@
 
 body {
     background-color: #555555;
-    background-image: url("https://4.bp.blogspot.com/-ufrFSzRdFJc/UUbGp90CZ5I/AAAAAAAAE_k/nPHlc61cuXU/s1600/seamless-paper-texture-light-blue-gray.jpg");
+    background-image: url("../images/seamless-paper-texture.jpg");
     color: #777777;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
@@ -10,7 +10,7 @@ body {
 /* BEGIN MAIN CONTAINER */
 
 #container {
-
+    min-width: 460px;
 }
 
 /* END MAIN CONTAINER */
@@ -50,10 +50,6 @@ body {
     text-decoration: none;
 }
 
-a:hover {
-    color: #4aaaa5;
-}
-
 /* END HEADER */
 
 
@@ -78,10 +74,16 @@ a:hover {
     margin: 30px 0px 30px 10px;
 }
 
+#hr1 {
+    width: 98%;
+    border-bottom: solid 1px #cccccc;
+}
+
 #mainImg {
     height: 225px;
     width: 225px;
     float: left;
+    border: solid 1px #777777;
     margin: 20px 20px 15px 0px;
 }
 
@@ -93,8 +95,16 @@ a:hover {
     text-decoration: none;
 }
 
+a:hover {
+    color: #4aaaa5;
+}
+
 
 /* Portfolio Page */
+
+#mainBox2 {
+    background-color: #ffffff;
+}
 
 #portImg1 {
     height: 275px;
@@ -172,7 +182,7 @@ a:hover {
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px; 
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
@@ -202,7 +212,6 @@ input[type=submit]:hover {
     margin-bottom: 20px;
 }
 
-
 /* END MAIN CONTENT */
 
 
@@ -226,6 +235,7 @@ input[type=submit]:hover {
 
 #hr2 {
     width: 90%;
+    border-bottom: solid 1px #cccccc;
     margin-bottom: 20px;
 }
 
@@ -250,32 +260,206 @@ input[type=submit]:hover {
 /* END SOCIAL BOX */
 
 
-/* BEGIN FOOTER */
+/* BEGIN STICKY FOOTER */
 
 #footerBox {
     margin-top: 30px;
-    text-align: center;
     height: 60px;
     width: 100%;
     position: fixed;
     left: 0;
     bottom: 0;
+    background-color: #666666;
+    color: #ffffff;
+    text-align: center;
+    font-size: smaller;
 }
 
 #footer p {
-    padding: 20px;
-    background-color: #666666;
-    color: #ffffff;
+    padding: 23px;
 }
 
-/* END FOOTER */
+/* END STICKY FOOTER */
 
 
-/* **************** */
+/* ************************ */
 
 
 /* BEGIN RESPONSIVE CHANGES */
 
+/* Changes at 1573PX wide or less */
 
+@media screen and (max-width:1573px) {
+    #portImg1 {
+        height: 225px;
+        width: 225px;
+        background-image: url("http://lorempixel.com/225/225/");
+    }
+    
+    #portImg2 {
+        height: 225px;
+        width: 225px;
+        background-image: url("http://lorempixel.com/225/225/");
+    }
+    
+    #portImg3 {
+        height: 225px;
+        width: 225px;
+        background-image: url("http://lorempixel.com/225/225/");
+    }
+    
+    #portImg4 {
+        height: 225px;
+        width: 225px;
+        background-image: url("http://lorempixel.com/225/225/");
+    }
+    
+    #portImg5 {
+        height: 225px;
+        width: 225px;
+        background-image: url("http://lorempixel.com/225/225/");
+    }
+    
+    #portImg6 {
+        height: 225px;
+        width: 225px;
+        background-image: url("http://lorempixel.com/225/225/");
+    }
+    
+    #portText {
+        margin-top: 170px;
+    }
+}
+
+/* Changes at 1333PX wide or less */
+
+@media screen and (max-width:1333px) {
+    #portImg1 {
+        height: 150px;
+        width: 150px;
+        background-image: url("http://lorempixel.com/150/150/");
+    }
+    
+    #portImg2 {
+        height: 150px;
+        width: 150px;
+        background-image: url("http://lorempixel.com/150/150/");
+    }
+    
+    #portImg3 {
+        height: 150px;
+        width: 150px;
+        background-image: url("http://lorempixel.com/150/150/");
+    }
+    
+    #portImg4 {
+        height: 150px;
+        width: 150px;
+        background-image: url("http://lorempixel.com/150/150/");
+    }
+    
+    #portImg5 {
+        height: 150px;
+        width: 150px;
+        background-image: url("http://lorempixel.com/150/150/");
+    }
+    
+    #portImg6 {
+        height: 150px;
+        width: 150px;
+        background-image: url("http://lorempixel.com/150/150/");
+    }
+    
+    #portText {
+        margin-top: 105px;
+        padding: 5px;
+        height: 35px;
+        font-size: 14px;
+    }
+}
+
+/* Changes at 991PX wide or less */
+
+@media screen and (max-width:991px) {
+    #portImg1 {
+        height: 350px;
+        width: 350px;
+        background-image: url("http://lorempixel.com/350/350/");
+    }
+    
+    #portImg2 {
+        height: 350px;
+        width: 350px;
+        background-image: url("http://lorempixel.com/350/350/");
+        float: left;
+    }
+    
+    #portImg3 {
+        height: 350px;
+        width: 350px;
+        background-image: url("http://lorempixel.com/350/350/");
+    }
+    
+    #portImg4 {
+        height: 350px;
+        width: 350px;
+        background-image: url("http://lorempixel.com/350/350/");
+        float: left;
+    }
+    
+    #portImg5 {
+        height: 350px;
+        width: 350px;
+        background-image: url("http://lorempixel.com/350/350/");
+    }
+    
+    #portImg6 {
+        height: 350px;
+        width: 350px;
+        background-image: url("http://lorempixel.com/350/350/");
+        float: left;
+    }
+    
+    #portText {
+        margin-top: 285px;
+        padding: 5px;
+        height: 45px;
+        font-size: 26px;
+    }
+}
+
+/* Changes at 767PX wide or less */
+
+@media screen and (max-width:767px) {
+    #navText {
+        margin-left: 0px;
+    }
+
+    #mainBox {
+        width: 95%;
+        margin-top: -30px;
+    }
+
+    #mainBox2 {
+        background-color: #ffffff;
+        width: 95%;
+        border-bottom: solid 1px #777777;
+        border-right: solid 1px #777777;
+    }
+
+    #mainTitle {
+        padding-top: 20px;
+    }
+
+    #socialBox {
+        margin-left: 0px;
+        margin-top: 30px;
+        width: 95%
+    }
+
+    #socialTitle {
+        padding-top: 25px;
+    }
+}
 
 /* END RESPONSIVE CHANGES */
